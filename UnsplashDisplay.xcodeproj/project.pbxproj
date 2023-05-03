@@ -11,6 +11,11 @@
 		D9D473F229FA2BEC0042DEA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D473F129FA2BEC0042DEA6 /* ContentView.swift */; };
 		D9D473F429FA2BEE0042DEA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D473F329FA2BEE0042DEA6 /* Assets.xcassets */; };
 		D9D473F829FA2BEE0042DEA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D473F729FA2BEE0042DEA6 /* Preview Assets.xcassets */; };
+		D9D473FF29FA2C010042DEA6 /* UnsplashAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D473FE29FA2C010042DEA6 /* UnsplashAPI.swift */; };
+		D9D4740129FA2C240042DEA6 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D4740029FA2C240042DEA6 /* CarouselView.swift */; };
+		D9D4740329FA38560042DEA6 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D4740229FA38560042DEA6 /* SearchBar.swift */; };
+		D9D474072A01FE550042DEA6 /* BGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D474062A01FE550042DEA6 /* BGColor.swift */; };
+		D9D4740A2A02023E0042DEA6 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D474092A02023E0042DEA6 /* CoreImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		D9D473F329FA2BEE0042DEA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9D473F529FA2BEE0042DEA6 /* UnsplashDisplay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnsplashDisplay.entitlements; sourceTree = "<group>"; };
 		D9D473F729FA2BEE0042DEA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D9D473FE29FA2C010042DEA6 /* UnsplashAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashAPI.swift; sourceTree = "<group>"; };
+		D9D4740029FA2C240042DEA6 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		D9D4740229FA38560042DEA6 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		D9D474062A01FE550042DEA6 /* BGColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGColor.swift; sourceTree = "<group>"; };
+		D9D474092A02023E0042DEA6 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9D4740A2A02023E0042DEA6 /* CoreImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +49,7 @@
 			children = (
 				D9D473EE29FA2BEC0042DEA6 /* UnsplashDisplay */,
 				D9D473ED29FA2BEC0042DEA6 /* Products */,
+				D9D474082A02023D0042DEA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +66,10 @@
 			children = (
 				D9D473EF29FA2BEC0042DEA6 /* UnsplashDisplayApp.swift */,
 				D9D473F129FA2BEC0042DEA6 /* ContentView.swift */,
+				D9D473FE29FA2C010042DEA6 /* UnsplashAPI.swift */,
+				D9D4740029FA2C240042DEA6 /* CarouselView.swift */,
+				D9D474062A01FE550042DEA6 /* BGColor.swift */,
+				D9D4740229FA38560042DEA6 /* SearchBar.swift */,
 				D9D473F329FA2BEE0042DEA6 /* Assets.xcassets */,
 				D9D473F529FA2BEE0042DEA6 /* UnsplashDisplay.entitlements */,
 				D9D473F629FA2BEE0042DEA6 /* Preview Content */,
@@ -67,6 +83,14 @@
 				D9D473F729FA2BEE0042DEA6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D9D474082A02023D0042DEA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9D474092A02023E0042DEA6 /* CoreImage.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +164,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9D473F229FA2BEC0042DEA6 /* ContentView.swift in Sources */,
+				D9D473FF29FA2C010042DEA6 /* UnsplashAPI.swift in Sources */,
+				D9D4740329FA38560042DEA6 /* SearchBar.swift in Sources */,
+				D9D4740129FA2C240042DEA6 /* CarouselView.swift in Sources */,
 				D9D473F029FA2BEC0042DEA6 /* UnsplashDisplayApp.swift in Sources */,
+				D9D474072A01FE550042DEA6 /* BGColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +297,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Unsplash would like to save Image to your gallary";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -307,6 +336,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Unsplash would like to save Image to your gallary";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
