@@ -11,7 +11,7 @@ import SwiftUI
 import Foundation
 
 struct UnsplashAPI {
-    static let apiKey = "uFeER8P5mNFwVtctuwWY0IhLC1-ZtgnCNp8MZHruwyM"
+    static let apiKey = "YOUR API KEY"
     private static let baseURL = "https://api.unsplash.com"
     
     static func fetchImages(searchQuery: String? = nil, page: Int = 1, perPage: Int = 10, completion: @escaping ([UnsplashImage]) -> Void) {
